@@ -1,3 +1,4 @@
+# by: RETBOT 
 from django.views.generic import ListView, DetailView
 from django.views.generic.edit import DeleteView, UpdateView, CreateView
 from django.urls import reverse_lazy
@@ -17,7 +18,7 @@ class VistaDetalleArticulo(DetailView):
     template_name = 'detalle_articulo.html'
     context_object_name = 'articulo'
     login_url = 'login'
-
+# by: RETBOT 
 class VistaEditarArticulo(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Articulo
     template_name = 'editar_articulos.html'
@@ -47,3 +48,4 @@ class VistaCrearArticulo(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.autor = self.request.user
         return super().form_valid(form)
+# by: RETBOT 
