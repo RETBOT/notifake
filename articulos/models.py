@@ -1,3 +1,4 @@
+# by: RETBOT 
 from django.db import models
 from django.conf import settings
 from django.contrib.auth import get_user_model
@@ -30,10 +31,10 @@ class Comentario(models.Model):
         get_user_model(),
         on_delete=models.CASCADE,
     )
-
+# by: RETBOT 
     def __str__(self):
         return self.comentario
     
     def get_absolute_url(self):
         return reverse("lista_publicaciones")
-    
+    # by: RETBOT 
