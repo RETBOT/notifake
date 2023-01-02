@@ -1,8 +1,8 @@
 <!--plantillas/lista_articulos.html-->
 {% extends 'base.html' %}
-
+<!-- # by: RETBOT -->
 {% block title %} - Art&iacute;culos{% endblock title %}
-    
+    <!-- # by: RETBOT -->
 
 {% block content %}
     {% for articulo in object_list %}
@@ -20,7 +20,7 @@
             </div>
             <div class="card-footer">
                 {% for comentario in articulo.comentarios.all %}
-                    <p>
+                    <p><!-- # by: RETBOT -->
                         <span class="font-weight-bold">{{ comentario.autor }} &middot;</span>
                         {{ comentario }}
                     </p>
@@ -30,4 +30,4 @@
         </div>
     {% endfor %}
 {% endblock content %}
-    
+    <!-- # by: RETBOT -->
