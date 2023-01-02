@@ -1,6 +1,6 @@
 <!-- plantillas/detalle_articulo.html -->
 {% extends 'base.html' %}
-
+<!-- # by: RETBOT -->
 {% block title %} - Detalle Art&iacute;culos{% endblock title %}
 
 {% block content %}
@@ -11,7 +11,7 @@
             </div>
             <div class="card-body">
                 {{ articulo.cuerpo }}
-            </div>
+            </div><!-- # by: RETBOT -->
             <div class="card-footer text-center text-muted">
                 <a href="{% url 'editar_articulos' articulo.pk %}">Editar</a> | 
                 <a href="{% url 'eliminar_articulo' articulo.pk %}">Eliminar</a> |
@@ -29,3 +29,4 @@
             </div>
         </div>
 {% endblock content %}
+<!-- # by: RETBOT -->
