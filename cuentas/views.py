@@ -1,3 +1,4 @@
+# by: RETBOT 
 from audioop import reverse
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
@@ -10,3 +11,4 @@ class VistaRegistro(CreateView):
     template_name = 'registration/signup.html'
 
 
+# by: RETBOT 
