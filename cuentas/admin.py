@@ -1,3 +1,4 @@
+# by: RETBOT 
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .forms import FormularioCambioUsuarioPers, FormularioCreacionUsuarioPers
@@ -7,7 +8,7 @@ from .models import UsuarioPers
 class UsuarioPersAdmin(UserAdmin):
     add_form = FormularioCreacionUsuarioPers
     form = FormularioCambioUsuarioPers
-    model = UsuarioPers
+    model = UsuarioPers # by: RETBOT 
     list_display = ['email', 'username', 'edad', 'is_staff',]
     fieldsets = UserAdmin.fieldsets + (
         (None, {'fields': ('edad',)}),
@@ -17,3 +18,4 @@ class UsuarioPersAdmin(UserAdmin):
     )
 
 admin.site.register(UsuarioPers, UsuarioPersAdmin)
+# by: RETBOT 
