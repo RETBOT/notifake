@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 from tkinter.ttk import Label
 import os
-
+# by: RETBOT 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-1bv--hg*qk*s0&6-km8l1r5y54@&zb6=2$xfj9b#^sh3xu)@86
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# by: RETBOT 
 
 # Application definition
 
@@ -58,7 +58,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "config.urls"
-
+# by: RETBOT 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
@@ -137,6 +137,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'gamesstorevideo@gmail.com'
-EMAIL_HOST_PASSWORD = 'qogzjmggsskpmsfr'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'gamesstorevideo@gmail.com'
+# by: RETBOT 
