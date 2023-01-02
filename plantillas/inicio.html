@@ -1,0 +1,24 @@
+<!-- plantillas/inicio.html -->
+{% extends 'base.html' %}
+
+{% block title %}- Inicio {% endblock title %}
+
+{% block content %}
+<!--{% if user.is_authenticated %}
+    <p>Hola {{ user.username }}! Usted tiene {{ user.edad }} años de edad.</p>-->
+    <!-- p><a href="{% url 'logout' %}">Salir (Cerrar Sesión)</a></p>-->
+<!--{% else %}
+    <p>No ha iniciado sesión</p>-->
+    <!-- <a href="{% url 'login' %}">Iniciar sesion</a> -->
+    <!--<p>Crear cuenta</p><a href="{% url 'signup' %}">Registrarse</a> -->
+<!--{% endif %}-->
+
+<div class="jumbotron">
+    <h1 class="display-4">NotiFake</h1>
+    <p class="lead">Un sitio web de periódico hecho en México con Django.</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{% url 'lista_articulos' %}"
+        role="button">Ver todos los articulos</a>
+    </p>
+</div>
+{% endblock content %}

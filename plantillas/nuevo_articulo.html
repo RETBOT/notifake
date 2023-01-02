@@ -1,0 +1,12 @@
+<!-- plantilla/nuevo_articulo.html -->
+{% extends 'base.html' %}
+
+{% block title %} - Nuevo Art&iacute;culos{% endblock title %}
+
+{% block content %}
+    <h1>Nuevo articulo</h1>
+    <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-success" type="submit" value="Guardar cambios" style="color: black;">
+    </form>
+{% endblock content %}

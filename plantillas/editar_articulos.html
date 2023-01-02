@@ -1,0 +1,13 @@
+<!-- plantillas/editar_articulos.html -->
+{% extends 'base.html' %}
+
+{% block title %} - Editar Art&iacute;culos{% endblock title %}
+
+{% block content %}
+<h1>Editar articulo</h1>
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <input class="btn btn-success ml-2" type="submit" value="Guardar cambios" style="color: black;">
+</form>
+{% endblock content %}
+    
